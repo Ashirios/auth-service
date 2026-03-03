@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auth_db  
+    username: postgres                             
+    password: 1234                
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update                            
+    show-sql: true                               
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+logging.level.org.springframework.security: DEBUG
+jwt:
+  secret: "zdtl7y6p5r4q3w2e1a0s9d8f7g6h5j4k3l2m1n0b9v8c7x6z5l4k3j2h1mN2bV3"
+  expiration: 86400000
